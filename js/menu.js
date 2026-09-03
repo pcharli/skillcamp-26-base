@@ -14,3 +14,34 @@
 // Aucun CSS supplémentaire n'est nécessaire.
 
 // Votre code ici.
+
+const menuBurger = document.querySelector('#menu-toggle')
+const navPrincipal = document.querySelector('#main-nav')
+
+menuBurger.addEventListener('click', e => {
+    e.preventDefault()
+    switchMenu()
+})
+
+const switchMenu = () =>  {
+   navPrincipal.classList.toggle('is-open')
+   const isExpanded = menuBurger.getAttribute('aria-expanded') === 'true';
+  menuBurger.setAttribute('aria-expanded', !isExpanded);
+}
+
+navPrincipal.addEventListener('click', e => {
+    //e.preventDefault()
+    if (e.target.tagName == 'A') {
+        switchMenu()
+    }
+})
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    // 1. Fermer la navigation mobile (BEM)
+    navPrincipal.classList.remove('is-open');
+
+    // 2. Mettre à jour l'accessibilité ARIA
+    menuBurger.setAttribute('aria-expanded', 'false');
+  }
+});

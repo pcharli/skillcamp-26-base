@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Styleguide — Je cours pour ma Forme</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🏃</span>
+      <span class="brand-text">JE COURS<small>POUR MA FORME</small></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#courses">Courses</a>
+      <a href="profil.html">Mon profil</a>
+      <a class="btn btn-primary" href="admin.html">Espace organisateur</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">UI Kit</p><h1 style="max-width:none;font-size:clamp(2rem,4vw,3rem)">Styleguide</h1></div>
+    </div>
+
+    <section class="card" style="padding:26px">
+      <div class="styleguide-grid">
+        <div class="sg-block">
+          <h3>Boutons</h3>
+          <div class="sg-stack">
+            <button class="btn btn-primary">Bouton primaire</button>
+            <button class="btn btn-success">Bouton succès</button>
+            <button class="btn btn-secondary">Bouton secondaire</button>
+            <button class="btn" disabled>Désactivé</button>
+          </div>
+        </div>
+
+        <div class="sg-block">
+          <h3>Badges</h3>
+          <div class="sg-stack">
+            <span class="badge badge--available">Disponible</span>
+            <span class="badge badge--warning">Presque complet</span>
+            <span class="badge badge--full">Complet</span>
+            <span class="badge badge--info">Information</span>
+          </div>
+        </div>
+
+        <div class="sg-block">
+          <h3>Messages</h3>
+          <div class="sg-stack">
+            <div class="notice notice--success">✓ Succès ! Votre inscription a été enregistrée.</div>
+            <div class="notice notice--warning">⚠ Attention ! Cette course est presque complète.</div>
+            <div class="notice notice--danger">✕ Erreur ! Une erreur est survenue.</div>
+            <div class="notice notice--info">ⓘ Information importante à noter.</div>
+          </div>
+        </div>
+
+        <div class="sg-block">
+          <h3>Champs</h3>
+          <div class="sg-stack">
+            <div class="field"><label>Champ par défaut</label><input placeholder="Votre réponse"></div>
+            <div class="field"><label>Champ avec erreur</label><input class="input-error" value="Valeur incorrecte"><p class="field-error">Message d'erreur affiché ici.</p></div>
+            <div class="field"><label>Champ valide</label><input style="border-color:var(--green)" value="Valeur valide"></div>
+          </div>
+        </div>
+
+        <div class="sg-block">
+          <h3>Autres composants</h3>
+          <div class="sg-stack">
+            <strong>Loader</strong>
+            <div class="loader" aria-label="Chargement"></div>
+            <strong>Empty state</strong>
+            <div class="empty-state">👟<strong>Aucune course trouvée.</strong>Modifiez vos critères de recherche.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>🏃 Je cours pour ma Forme</span>
+    <span>© 2026 — Support pédagogique SkillCamp</span>
+  </div>
+</footer>
+
+  <!-- Exercice JS : décommenter lorsque le menu mobile est abordé. -->
+  <!-- <script src="js/menu.js"></script> -->
+</body>
+</html>

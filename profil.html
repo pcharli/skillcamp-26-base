@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon profil — Je cours pour ma Forme</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🏃</span>
+      <span class="brand-text">JE COURS<small>POUR MA FORME</small></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#courses">Courses</a>
+      <a href="profil.html">Mon profil</a>
+      <a class="btn btn-primary" href="admin.html">Espace organisateur</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-heading">
+    <div class="container">
+      <p class="eyebrow">Espace coureur</p>
+      <h1 style="max-width:none;font-size:clamp(2rem,4vw,3rem)">Mon profil</h1>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="profile-layout">
+      <aside class="card profile-card">
+        <div class="profile-avatar">JM</div>
+        <h2 style="font-size:1.5rem">Julie Martin</h2>
+
+        <div class="profile-meta">
+          <span>✉️ julie@example.com</span>
+          <span>🎂 12/04/1994</span>
+          <span>🏃 2 inscriptions actives</span>
+        </div>
+
+        <div class="sg-stack" style="margin-top:20px">
+          <button class="btn btn-secondary" type="button">Modifier mon profil</button>
+          <button class="btn btn-secondary" type="button">Se déconnecter</button>
+        </div>
+      </aside>
+
+      <section class="card profile-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Mes courses</p>
+            <h2>Mes inscriptions</h2>
+          </div>
+          <span class="badge badge--info" id="registration-count">2 inscriptions</span>
+        </div>
+
+        <div id="my-registrations" class="registration-list">
+          <article class="registration-item" data-registration-id="101">
+            <div>
+              <span class="badge badge--warning">Presque complet</span>
+              <h3 style="margin-top:8px">Trail des Lacs</h3>
+              <div class="registration-item__meta">
+                <span>📅 08 novembre 2026</span>
+                <span>📍 Froidchapelle</span>
+                <span>🏃 21 km</span>
+                <span>✓ Inscription confirmée</span>
+              </div>
+            </div>
+
+            <div class="registration-item__actions">
+              <a class="btn btn-secondary" href="index.html#courses">Voir la course</a>
+              <button class="btn btn-danger" type="button">Se désinscrire</button>
+            </div>
+          </article>
+
+          <article class="registration-item" data-registration-id="102">
+            <div>
+              <span class="badge badge--available">Disponible</span>
+              <h3 style="margin-top:8px">Urban Night Run</h3>
+              <div class="registration-item__meta">
+                <span>📅 22 novembre 2026</span>
+                <span>📍 Namur</span>
+                <span>🏃 10 km</span>
+                <span>✓ Inscription confirmée</span>
+              </div>
+            </div>
+
+            <div class="registration-item__actions">
+              <a class="btn btn-secondary" href="index.html#courses">Voir la course</a>
+              <button class="btn btn-danger" type="button">Se désinscrire</button>
+            </div>
+          </article>
+        </div>
+
+        <div id="profile-message" style="margin-top:16px"></div>
+      </section>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>🏃 Je cours pour ma Forme</span>
+    <span>© 2026 — Support pédagogique SkillCamp</span>
+  </div>
+</footer>
+  <!-- Exercice JS : le menu mobile peut être activé ici. -->
+  <!-- <script src="js/menu.js"></script> -->
+</body>
+</html>

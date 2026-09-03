@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Je cours pour ma Forme</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🏃</span>
+      <span class="brand-text">JE COURS<small>POUR MA FORME</small></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#courses">Courses</a>
+      <a href="profil.html">Mon profil</a>
+      <a class="btn btn-primary" href="admin.html">Espace organisateur</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Bouger. Progresser. Partager.</p>
+        <h1>Trouvez votre prochaine course</h1>
+        <p>Rejoignez des événements près de chez vous et dépassez vos limites.</p>
+        <a class="btn btn-success" href="#courses">Découvrir les courses</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Agenda</p>
+          <h2>Les prochaines courses</h2>
+        </div>
+        <p><strong id="race-count">4</strong> courses disponibles</p>
+      </div>
+
+      <div class="filters">
+        <label>
+          <span>Rechercher</span>
+          <input type="search" id="search" placeholder="Rechercher une course...">
+        </label>
+        <label>
+          <span>Distance</span>
+          <select id="distance">
+            <option value="all">Toutes</option>
+            <option value="5">5 km</option>
+            <option value="10">10 km</option>
+            <option value="21">Semi-marathon</option>
+            <option value="42">Marathon</option>
+          </select>
+        </label>
+        <label>
+          <span>Trier par</span>
+          <select id="sort">
+            <option value="date">Date croissante</option>
+            <option value="distance">Distance</option>
+            <option value="availability">Places disponibles</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="race-list" class="race-grid">
+    <!-- Votre carte ici -->
+</div>
+  </section>
+
+  <section class="section features">
+    <div class="container feature-grid">
+      <article class="feature">
+        <div class="feature-icon">👟</div>
+        <div><h3>Pour tous les niveaux</h3><p>Des courses accessibles à tous, du débutant au coureur confirmé.</p></div>
+      </article>
+      <article class="feature">
+        <div class="feature-icon">♡</div>
+        <div><h3>Dépassez-vous</h3><p>Fixez vos objectifs et progressez à votre rythme.</p></div>
+      </article>
+      <article class="feature">
+        <div class="feature-icon">👥</div>
+        <div><h3>Rejoignez la communauté</h3><p>Partagez votre passion et vivez des moments inoubliables.</p></div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>🏃 Je cours pour ma Forme</span>
+    <span>© 2026 — Support pédagogique SkillCamp</span>
+  </div>
+</footer>
+
+  <!-- Exercice JS : décommenter lorsque le menu mobile est abordé. -->
+  <!-- <script src="js/menu.js"></script> -->
+</body>
+</html>

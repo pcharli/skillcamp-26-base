@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscription — Je cours pour ma Forme</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🏃</span>
+      <span class="brand-text">JE COURS<small>POUR MA FORME</small></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#courses">Courses</a>
+      <a href="profil.html">Mon profil</a>
+      <a class="btn btn-primary" href="admin.html">Espace organisateur</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <p><a href="index.html#courses">← Retour aux courses</a></p>
+
+    <div class="registration-layout">
+      <article class="card race-summary">
+        <div class="race-summary__media">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="Trail des Lacs">
+        </div>
+        <div class="race-summary__body">
+          <span class="badge badge--warning">Presque complet</span>
+          <h2 id="race-name">Trail des Lacs</h2>
+          <div class="race-card__meta">
+            <span>📍 Froidchapelle</span>
+            <span>🏃 <span id="race-distance">21</span> km</span>
+            <span>👥 <span id="race-registered">142</span> / <span id="race-capacity">150</span> participants</span>
+          </div>
+          <div class="notice notice--info" id="availability-message">
+            <strong>Il ne reste que 8 places !</strong><br>
+            Ne tardez pas à vous inscrire.
+          </div>
+        </div>
+      </article>
+
+      <section class="card form-card">
+        <h2>Inscription</h2>
+        <form id="registration-form" class="form-grid" novalidate>
+          <div class="field">
+            <label for="firstname">Prénom *</label>
+            <input id="firstname" name="firstname" type="text" autocomplete="given-name">
+            <p class="field-error" id="firstname-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="lastname">Nom *</label>
+            <input id="lastname" name="lastname" type="text" autocomplete="family-name">
+            <p class="field-error" id="lastname-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" autocomplete="email">
+            <p class="field-error" id="email-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="birthdate">Date de naissance *</label>
+            <input id="birthdate" name="birthdate" type="date">
+            <p class="field-error" id="birthdate-error"></p>
+          </div>
+
+          <label class="checkbox-row">
+            <input id="terms" name="terms" type="checkbox">
+            <span>J'accepte le règlement de la course *</span>
+          </label>
+          <p class="field-error" id="terms-error"></p>
+
+          <div id="form-message"></div>
+
+          <button class="btn btn-success" type="submit">Je m'inscris</button>
+        </form>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>🏃 Je cours pour ma Forme</span>
+    <span>© 2026 — Support pédagogique SkillCamp</span>
+  </div>
+</footer>
+
+  <!-- Exercice JS : décommenter lorsque le menu mobile est abordé. -->
+  <!-- <script src="js/menu.js"></script> -->
+</body>
+</html>

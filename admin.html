@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espace organisateur — Je cours pour ma Forme</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🏃</span>
+      <span class="brand-text">JE COURS<small>POUR MA FORME</small></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#courses">Courses</a>
+      <a href="profil.html">Mon profil</a>
+      <a class="btn btn-primary" href="admin.html">Espace organisateur</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-heading">
+    <div class="container">
+      <p class="eyebrow">Administration</p>
+      <h1 style="max-width:none;font-size:clamp(2rem,4vw,3rem)">Espace organisateur</h1>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="stats-grid">
+      <article class="card stat-card">
+        <div class="stat-icon">👥</div>
+        <div><div class="stat-value" id="stat-registrations">479</div><div class="stat-label">Inscriptions</div></div>
+      </article>
+      <article class="card stat-card">
+        <div class="stat-icon">🗓️</div>
+        <div><div class="stat-value" id="stat-races">8</div><div class="stat-label">Courses</div></div>
+      </article>
+      <article class="card stat-card">
+        <div class="stat-icon">📈</div>
+        <div><div class="stat-value" id="stat-occupancy">81 %</div><div class="stat-label">Taux de remplissage</div></div>
+      </article>
+      <article class="card stat-card">
+        <div class="stat-icon">🕒</div>
+        <div><div class="stat-value" style="font-size:1rem">MàJ</div><div class="stat-label" id="stat-updated">31/08/2026 09:35</div></div>
+      </article>
+    </div>
+
+    <section class="card table-card">
+      <div class="section-heading">
+        <div><p class="eyebrow">Gestion</p><h2>Participants</h2></div>
+      </div>
+
+      <div class="table-tools">
+        <input id="participant-search" type="search" placeholder="Rechercher un participant...">
+        <select id="race-filter">
+          <option value="all">Toutes les courses</option>
+          <option>Trail des Lacs</option>
+          <option>Jogging de Charleroi</option>
+          <option>Urban Night Run</option>
+          <option>Course des Terrils</option>
+        </select>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th><th>Email</th><th>Course</th><th>Distance</th><th>Date inscription</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="participants">
+          <tr><td>Julie Martin</td><td>julie@example.com</td><td>Trail des Lacs</td><td>21 km</td><td>15/08/2026 14:32</td><td><button class="btn btn-danger">Supprimer</button></td></tr>
+          <tr><td>Marc Dupont</td><td>marc@example.com</td><td>Jogging de Charleroi</td><td>10 km</td><td>15/08/2026 13:02</td><td><button class="btn btn-danger">Supprimer</button></td></tr>
+          <tr><td>Sarah Lambert</td><td>sarah@example.com</td><td>Urban Night Run</td><td>10 km</td><td>15/08/2026 12:11</td><td><button class="btn btn-danger">Supprimer</button></td></tr>
+          <tr><td>Thomas Leroy</td><td>thomas@example.com</td><td>Trail des Lacs</td><td>21 km</td><td>16/08/2026 11:47</td><td><button class="btn btn-danger">Supprimer</button></td></tr>
+          <tr><td>Emma Dubois</td><td>emma@example.com</td><td>Course des Terrils</td><td>5 km</td><td>16/08/2026 10:58</td><td><button class="btn btn-danger">Supprimer</button></td></tr>
+        </tbody>
+      </table>
+
+      <nav class="pagination" aria-label="Pagination">
+        <a href="#">‹</a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">…</a><a href="#">48</a><a href="#">›</a>
+      </nav>
+    </section>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>🏃 Je cours pour ma Forme</span>
+    <span>© 2026 — Support pédagogique SkillCamp</span>
+  </div>
+</footer>
+
+  <!-- Exercice JS : décommenter lorsque le menu mobile est abordé. -->
+  <!-- <script src="js/menu.js"></script> -->
+</body>
+</html>
